@@ -1,0 +1,24 @@
+Index: src/main/java/com/SpringSystem/collections/listscenario/LinkedListExample.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/SpringSystem/collections/listscenario/LinkedListExample.java b/src/main/java/com/SpringSystem/collections/listscenario/LinkedListExample.java
+--- a/src/main/java/com/SpringSystem/collections/listscenario/LinkedListExample.java	
++++ b/src/main/java/com/SpringSystem/collections/listscenario/LinkedListExample.java	(date 1743308157454)
+@@ -54,6 +54,14 @@
+      System.out.println("After removing first occurrence of 'Zara': " + linked);
+      linked.removeLastOccurrence("Zara");
+      System.out.println("After removing last occurrence of 'Zara': " + linked);
+-    linked.
++
++     LinkedList<Integer> str = new LinkedList<>();
++     str.add(3);
++     str.add(5);
++     str.add(7);
++     str.add(9);
++     String str1 = str.toString();
++     boolean b = linked.addAll(Collections.singleton(str1));
++     System.out.println(b);
+     }
+ }
