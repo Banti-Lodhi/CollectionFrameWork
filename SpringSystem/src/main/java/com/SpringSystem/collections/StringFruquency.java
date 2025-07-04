@@ -5,7 +5,8 @@ import java.util.*;
 public class StringFruquency {
     public static void main(String[] args) {
         
-        //frequency of string exists times
+//        frequency of string exists times
+
 //        List<String> strList = Arrays.asList("Sona", "sona", "Sona", "Riya", "Shyam", "Maduri", "Shakshi", "Riya");
 //
 //        Map<String, Integer> frequency = new HashMap<>();

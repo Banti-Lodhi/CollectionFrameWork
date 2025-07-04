@@ -26,7 +26,18 @@ public class reverseString {
             }
         }
     }
+        public static boolean isPalindrome(String reverseVal) {
+        int left=0, right=reverseVal.length()-1;
+        while(left<right) {
+            if(reverseVal.charAt(left++) != reverseVal.charAt(right--)) {
+                return false;
+            }
+        }
+        return true;
+    }
     public static void main(String[] args) {
+        String palindrome = "madam";
+        System.out.println("Is it a palindrome true/false: " +isPalindrome(palindrome));
         String str = "Sona Shina is biggest chairman of india";
 //        StringBuilder reverseString = new StringBuilder(str).reverse();
 //        System.out.println(reverseString);
@@ -35,5 +46,7 @@ public class reverseString {
 //        System.out.println(new String(str));
 
         FizzBuzz(100);
+       StringBuilder str1 = new StringBuilder(str).reverse();
+        System.out.println(str1);
     }
 }
